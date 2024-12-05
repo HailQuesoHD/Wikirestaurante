@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos - Wikirestaurante de Quesos</title>
+    <link rel="stylesheet" href="../css/contactenos.css">
+    <link rel="icon" href="../imagenes/queso_logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2 class="sidebar-titulo">Explora!</h2>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="enciclopedia.html">Enciclopedia</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contactenos.html">Contáctenos</a></li>
+                </ul>
+                <div class="imagen_sidebar">
+                    <img src="../imagenes/queso_logo.png" alt="">
+                </div>
+            </nav>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <div class="contenedor-transparente cont-contactenosinicio">
+                <h1>CONTACTENOS!</h1>
+
+                <p>¡Estamos aquí para ayudarte! En nuestra sección para Contactarnos, queremos que te sientas libre de
+                    hacernos todas tus preguntas, inquietudes o comentarios. Ya sea que necesites más información sobre
+                    nuestros productos, tengas sugerencias o simplemente quieras compartir tu experiencia con nosotros,
+                    estamos a solo un mensaje de distancia.</p>
+            </div>
+
+            <div class="contenedor-transparente cont-redes_sociales">
+                <h2>CONTACTENOS EN NUESTRAS REDES SOCIALES</h2>
+                <div class="cont-solo_redes_sociales">
+                    <div class="cont-img_redes_sociales">
+                        <img src="../imagenes/logo_youtube.png" alt="">
+                        <p>Youtube</p>
+                    </div>
+                    <div class="cont-img_redes_sociales">
+                        <img src="../imagenes/logo_facebook.png" alt="">
+                        <p>Facebook</p>
+                    </div>
+                    <div class="cont-img_redes_sociales">
+                        <img src="../imagenes/logo_instagram.png" alt="">
+                        <p>Instagram</p>
+                    </div>
+                    <div class="cont-img_redes_sociales">
+                        <img src="../imagenes/logo_twitter.png" alt="">
+                        <p>Twitter</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor-transparente cont-contactenosescribenos">
+                <h2>¡Escríbenos!</h2>
+
+                <form class="enviar_datos" action="/enviar_mensaje" method="POST">
+                    <div class="env">
+                        <div>Nombre:</div>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="env">
+                        <div>Correo Electrónico:</div>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="env">
+                        <div>Asunto:</div>
+                        <select id="asunto" name="asunto">
+                            <option value="consulta">Consulta</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="reclamo">Reclamo</option>
+                        </select>
+                    </div>
+                    <div class="env">
+                        <div>Mensaje:</div>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="contenedor-transparente cont-preg_frecuentes">
+                <h2>PREGUNTAS FRECUENTES</h2>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">¿Cómo puedo hacer un pedido?</button>
+                        <div class="faq-answer">
+                            <p>Puedes hacer un pedido navegando por nuestros productos, seleccionando lo que deseas y
+                                haciendo clic en "Añadir al carrito". Luego procede a pagar en la sección de "Checkout".
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Cuáles son los métodos de pago aceptados?</button>
+                        <div class="faq-answer">
+                            <p>Aceptamos tarjetas de crédito, débito y pagos vía transferencia bancaria o plataformas
+                                como PayPal.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Cuánto tiempo tarda la entrega?</button>
+                        <div class="faq-answer">
+                            <p>El tiempo de entrega depende de la ubicación. En ciudades principales suele tardar entre
+                                3 a 5 días hábiles.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contenedor-transparente cont-comentarios">
+                <h2>COMENTARIOS</h2>
+                <!-- Formulario para agregar un comentario -->
+                <form class="formulario-comentario" action="/enviar_comentario" method="POST">
+                    <div class="campo-comentario">
+                        <textarea id="comentario" name="comentario" rows="5" placeholder="Escribe tu comentario aquí..."
+                            required></textarea>
+                    </div>
+                    <button type="submit">Enviar Comentario</button>
+                </form>
+
+                <!-- Sección de comentarios ya publicados -->
+                <div class="comentarios-publicados">
+                    <h3>Comentarios de otros usuarios:</h3>
+                    <div class="comentario">
+                        <p><strong>Juan Pérez:</strong> Excelente servicio, me encanta la variedad de productos que
+                            tienen.</p>
+                    </div>
+                    <div class="comentario">
+                        <p><strong>María Gómez:</strong> Muy buenos precios, volveré a comprar pronto.</p>
+                    </div>
+                    <!-- Añade más comentarios aquí -->
+                </div>
+
+
+            </div>
+            <script src="../jss/contactenos.js"></script>
+            <div class="pie">
+                <footer>
+                    <p>2024 Wikipedia de Quesos. Todos los derechos reservados.</p>
+                    <div class="cont_pie">
+                        <img src="../imagenes/peppino_finaljudgement.png" alt="">
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

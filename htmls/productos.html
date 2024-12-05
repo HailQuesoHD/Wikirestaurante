@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Wikirestaurante de Quesos</title>
+    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="icon" href="../imagenes/queso_logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2 class="sidebar-titulo">Explora!</h2>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="enciclopedia.html">Enciclopedia</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contactenos.html">Contáctenos</a></li>
+                </ul>
+                <div class="imagen_sidebar">
+                    <img src="../imagenes/queso_logo.png" alt="">
+                </div>
+            </nav>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <div class="contenedor-transparente cont-prodinicio">
+                <h1>BIENVENIDO A LA SECCION DE PRODUCTOS!</h1>
+
+                <p>¡Bienvenido a nuestra sección de productos! Aquí encontrarás una cuidada selección de quesos y
+                    delicias gourmet, cada uno elaborado con pasión y dedicación. Desde el suave y cremoso queso Brie
+                    hasta el sabor distintivo del Edam</p>
+            </div>
+            <!-- Carrusel -->
+            <div class="contenedor-transparente cont-carrusel">
+                <div class="carousel">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="../imagenes/queso_manchego.png" alt="Imagen 1">
+                            <img src="../imagenes/queso_manchego2.png" alt="Imagen 2">
+                            <div class="text_slide">
+                                <h3>Compra uno y llévate el segundo a mitad de precio.</h3>
+                                <p>Disfruta de la textura firme y el sabor intenso del queso Manchego. Ideal para
+                                    acompañar con un buen vino tinto.</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="../imagenes/queso_brie.png" alt="Imagen 1">
+                            <img src="../imagenes/queso_brie2.png" alt="Imagen 2">
+                            <div class="text_slide">
+                                <h3>20% de descuento en la compra de dos kilos.</h3>
+                                <p>Este queso cremoso y suave es perfecto para derretir en sándwiches o disfrutar en una
+                                    tabla de quesos.</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="../imagenes/queso_cheddar.png" alt="Imagen 1">
+                            <img src="../imagenes/queso_cheddar2.png" alt="Imagen 2">
+                            <div class="text_slide">
+                                <h3>Lleva tres por el precio de dos.</h3>
+                                <p>Un clásico de sabor fuerte y distintivo. Excelente para cocinar, en hamburguesas o
+                                    como snack.</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="../imagenes/queso_feta.png" alt="Imagen 1">
+                            <img src="../imagenes/queso_feta2.png" alt="Imagen 2">
+                            <div class="text_slide">
+                                <h3>Pack especial: 250g a solo S/10.00, en lugar de S/15.00.</h3>
+                                <p>Perfecto para ensaladas y platos mediterráneos, el queso feta añade un toque salado y
+                                    fresco a tus comidas.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moverSlide(1)">&#10095;</button>
+                </div>
+                <script src="../jss/productos.js"></script>
+            </div>
+
+            <section class="barra-busqueda">
+                <input type="text" id="buscador" placeholder="Busca tus productos de Queso aqui!">
+            </section>
+
+            <section class="destacados">
+                <div class="contenedor-transparente cont_proddestacado">
+
+                    <a href="carrito_prod.html">
+                        <button class="btn-carrito">Ir al carrito de compras</button>
+                    </a>
+
+                    <h2>Productos Destacados</h2>
+                    <article class="producto_d1">
+
+                        <div class="imagen_real">
+                            <img src="../imagenes/queso_cheddar.png" alt="Queso 1">
+                        </div>
+                        <div class="texto_e_imagen_animada">
+                            <img src="../imagenes/queso_cheddar_animado.png" alt="Queso 1">
+
+                            <div class="texto_prodd1">
+                                <h3>Queso Gourmet</h3>
+                                <p>El queso gourmet es una delicadeza elaborada con ingredientes de alta calidad
+                                    y técnicas artesanales. Ofrece un sabor intenso y sofisticado, ideal para
+                                    degustaciones y acompañamientos. Perfecto para los paladares más exigentes.
+                                </p>
+                                <section class="compra-producto">
+                                    <div class="precio-venta">
+                                        <span>Precio de venta (kilo): S/.39.90</span>
+                                            <button class="btn-comprar" onclick="agregarAlCarrito('Queso Gourmet', 29.90)">Añadir al carro</button>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto_d1">
+
+                        <div class="imagen_real">
+                            <img src="../imagenes/queso_brie.png" alt="Queso 1">
+                        </div>
+                        <div class="texto_e_imagen_animada">
+                            <img src="../imagenes/queso_brie_animado.png" alt="Queso 1">
+
+                            <div class="texto_prodd1">
+                                <h3>Queso Brie</h3>
+                                <p>El queso Brie es un famoso queso francés de pasta blanda, conocido por su
+                                    corteza comestible y su interior cremoso. Tiene un sabor delicado y
+                                    mantecoso, ideal para tablas de quesos o como un sofisticado aperitivo
+                                    caliente.</p>
+                                <section class="compra-producto">
+                                    <div class="precio-venta">
+                                        <span>Precio de venta (kilo): S/.29.90</span>
+                                        <button class="btn-comprar" onclick="agregarAlCarrito('Queso Brie', 29.90)">Añadir al carro</button>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="producto_d1">
+
+                        <div class="imagen_real">
+                            <img src="../imagenes/queso_edam.png" alt="Queso 1">
+                        </div>
+                        <div class="texto_e_imagen_animada">
+                            <img src="../imagenes/queso_edam_animado.png" alt="Queso 1">
+
+                            <div class="texto_prodd1">
+                                <h3>Queso Edam</h3>
+                                <p>El queso Edam, originario de los Países Bajos, se caracteriza por su cáscara
+                                    roja y su sabor suave y ligeramente dulce. Su textura cremosa lo hace
+                                    perfecto para sándwiches, ensaladas o como aperitivo.</p>
+                                <section class="compra-producto">
+                                    <div class="precio-venta">
+                                        <span>Precio de venta (kilo): S/.29.90</span>
+                                        <button class="btn-comprar" onclick="agregarAlCarrito('Queso Edam', 29.90)">Añadir al carro</button>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="producto_d1">
+
+                        <div class="imagen_real">
+                            <img src="../imagenes/queso_edam.png" alt="Queso 1">
+                        </div>
+
+                        <div class="texto_e_imagen_animada">
+                            <img src="../imagenes/queso_edam_animado.png" alt="Queso 1">
+
+                            <div class="texto_prodd1">
+                                <h3>Queso Edam</h3>
+                                <p>El queso Edam, originario de los Países Bajos, se caracteriza por su cáscara roja
+                                    y su sabor suave y ligeramente dulce. Su textura cremosa lo hace perfecto para
+                                    sándwiches, ensaladas o como aperitivo.</p>
+
+                                <section class="compra-producto">
+                                    <div class="precio-venta">
+                                        <span>Precio de venta (kilo): S/.29.90</span>
+                                        <button class="btn-comprar" onclick="agregarAlCarrito('Queso Edam', 29.90)">Añadir al carro</button>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="producto_d1">
+
+                        <div class="imagen_real">
+                            <img src="../imagenes/queso_edam.png" alt="Queso 1">
+                        </div>
+
+                        <div class="texto_e_imagen_animada">
+                            <img src="../imagenes/queso_edam_animado.png" alt="Queso 1">
+
+                            <div class="texto_prodd1">
+                                <h3>Queso Edam</h3>
+                                <p>El queso Edam, originario de los Países Bajos, se caracteriza por su cáscara roja
+                                    y su sabor suave y ligeramente dulce. Su textura cremosa lo hace perfecto para
+                                    sándwiches, ensaladas o como aperitivo.</p>
+                                    
+                                <section class="compra-producto">
+                                    <div class="precio-venta">
+                                        <span>Precio de venta (kilo): S/.29.90</span>
+                                        <button class="btn-comprar" onclick="agregarAlCarrito('Queso Edam', 29.90)">Añadir al carro</button>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+            </section>
+
+            <div class="pie">
+                <footer>
+                    <p>2024 Wikipedia de Quesos. Todos los derechos reservados.</p>
+                    <div class="cont_pie">
+                        <img src="../imagenes/peppino_finaljudgement.png" alt="">
+                    </div>
+                </footer>
+            </div>
+            <script src="../jss/productos_buscador.js"></script>
+            <script src="../jss/productos_carrito.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
